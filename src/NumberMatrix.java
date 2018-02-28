@@ -13,7 +13,7 @@ public class NumberMatrix {
 	 * Postcondition:The original elements of matrix have been shifted to 
 	 * 				 the next higher position in row-major order, and
 	 * 				 matrix[0][0] == num.
-	 * 				 The original last element in the last row is discarded.
+	 * 				  The original last element in the last row is discarded.
 	 */	
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 

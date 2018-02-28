@@ -5,7 +5,7 @@ public class ArrayUtil {
 	 * last element, and inserts the new number at the front.
 	 * 
 	 * @param arr
-	 *            the array to manipulate Precondition: arr.length > 0
+	 *             the array to manipulate Precondition: arr.length > 0
 	 * @param num
 	 *            the new number to insert at the front of arr Postcondition: The
 	 *            original elements of arr have been shifted to the next higher
