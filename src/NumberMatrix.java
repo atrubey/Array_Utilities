@@ -18,6 +18,19 @@ public class NumberMatrix {
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 
 		
+		for (int i = matrix.length - 1; i >= 0; i--) {
+			for (int j = matrix[i].length - 1; j >= 0; j--) {
+				if (i < matrix.length - 1 && j == matrix[i].length - 1) {
+					matrix[i+1][0] = matrix[i][j];
+				} else if (i == matrix.length - 1 && j == matrix[i].length - 1) {
+					// don't do anything
+				} else {
+					matrix[i][j+1] = matrix[i][j];
+				}
+			}
+		}
+
+		matrix[0][0] = num;
 		
 		
 	}
@@ -30,6 +43,21 @@ public class NumberMatrix {
 	 */
 	public void rotateMatrix()
 	{ /* to be implemented in part (c) */ 
+		int num = 0; 
+		
+		for (int i = matrix.length - 1; i >= 0; i--) {
+			for (int j = matrix[i].length - 1; j >= 0; j--) {
+				if (i < matrix.length - 1 && j == matrix[i].length - 1) {
+					matrix[i+1][0] = matrix[i][j];
+				} else if (i == matrix.length - 1 && j == matrix[i].length - 1) {
+					num = matrix[matrix.length - 1][matrix[i].length - 1]; 
+				} else {
+					matrix[i][j+1] = matrix[i][j];
+				}
+			}
+		}
+
+		matrix[0][0] = num;
 		
 	}
 	
